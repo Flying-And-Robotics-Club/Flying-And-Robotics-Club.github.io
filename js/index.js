@@ -33,7 +33,7 @@ function expand_minor_projects(index) {
   var cover = document.createElement("img");
   cover.src = project["img_src"];
   cover.style = "width: 100%";
-  document.querySelector('#content_image').innerHTMl = "";
+  document.querySelector("#content_image").innerHTML = " ";
   document.querySelector('#content_image').appendChild(cover);
   document.querySelector('#content_description').innerText = project["description"];
   document.querySelector('#content_deadline').innerText = "Expected deadline: " + project["deadline"];
