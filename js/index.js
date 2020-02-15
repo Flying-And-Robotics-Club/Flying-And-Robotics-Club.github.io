@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded'() ={
+document.addEventListener('DOMContentLoaded', () => {
   var minorProjects = []
 
   var caveExplorationBot = {
