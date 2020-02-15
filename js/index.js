@@ -28,6 +28,7 @@ var roboticArm = {
 minorProjects.push(roboticArm);
 
 function expand_minor_projects(index) {
+  document.querySelector('#datadiv').style.display = "block";
   var project = minorProjects[index];
   document.querySelector('#content_title').innerText = project["title"];
   var cover = document.createElement("img");
@@ -50,6 +51,7 @@ function collapse_minor_projects() {
   document.querySelector('#content_teams_involved').innerHTML = "";
   document.querySelector('#collapse').style.display = "none";
   smoothScroll(document.querySelector('.item-link'));
+  document.querySelector('#datadiv').style.display = "none";
 }
 
 window.smoothScroll = function(target) {
