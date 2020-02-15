@@ -44,14 +44,20 @@ function expand_minor_projects(index) {
 }
 
 function collapse_minor_projects() {
-  document.querySelector("#content_title").innerHTML = "";
-  document.querySelector("#content_image").innerHTML = "";
-  document.querySelector('#content_description').innerHTML = "";
-  document.querySelector('#content_deadline').innerHTML = "";
-  document.querySelector('#content_teams_involved').innerHTML = "";
-  document.querySelector('#collapse').style.display = "none";
   smoothScroll(document.querySelector('#scrolluploc'));
-  document.querySelector('#datadiv').style.display = "none";
+  
+  myfn();
+  function myfn(){
+    setTimeout(function(){
+      document.querySelector('#datadiv').style.display = "none";
+      document.querySelector("#content_title").innerHTML = "";
+      document.querySelector("#content_image").innerHTML = "";
+      document.querySelector('#content_description').innerHTML = "";
+      document.querySelector('#content_deadline').innerHTML = "";
+      document.querySelector('#content_teams_involved').innerHTML = "";
+      document.querySelector('#collapse').style.display = "none";
+    }, 700);
+  }
 }
 
 window.smoothScroll = function(target) {
