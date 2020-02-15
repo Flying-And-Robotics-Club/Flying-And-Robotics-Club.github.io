@@ -39,3 +39,6 @@ function expand_minor_projects(index) {
   document.querySelector('#content_deadline').innerText = "Expected deadline: " + project["deadline"];
   document.querySelector('#content_teams_involved').innerText = "Teams involved: " + project["teams_involved"];
 }
+document.addEventListener('DOMContentLoaded', () => {
+  expand_minor_projects(0);
+})
