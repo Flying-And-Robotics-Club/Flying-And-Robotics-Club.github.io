@@ -38,7 +38,43 @@ function expand_minor_projects(index) {
   document.querySelector('#content_description').innerText = project["description"];
   document.querySelector('#content_deadline').innerText = "Expected deadline: " + project["deadline"];
   document.querySelector('#content_teams_involved').innerText = "Teams involved: " + project["teams_involved"];
+  document.querySelector('#collapse').style.display = "block";
+  smoothScroll(document.querySelector("#content"));
 }
+
+function collapse_minor_projects() {
+  document.querySelector("#content_title").innerHTML = "";
+  document.querySelector("#content_image").innerHTML = "";
+  document.querySelector('#content_description').innerHTML = "";
+  document.querySelector('#content_deadline').innerHTML = "";
+  document.querySelector('#content_teams_involved').innerHTML = "";
+  document.querySelector('#collapse').style.display = "none";
+  smoothScroll(document.querySelector('.item-link'));
+}
+
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  expand_minor_projects(0);
+  document.querySelector('#collapse').style.display = "none";
 })
