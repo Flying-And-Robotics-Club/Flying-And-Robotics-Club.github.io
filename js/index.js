@@ -28,6 +28,7 @@ var roboticArm = {
 minorProjects.push(roboticArm);
 
 function expand_minor_projects(index) {
+  if (window.screen.width * window.devicePixelRatio > 1200) {
   document.querySelector('#datadiv').style.display = "none";
   setTimeout(function(){
     $("#datadiv").slideToggle(300, "swing", function(){/*done*/});
@@ -45,6 +46,7 @@ function expand_minor_projects(index) {
   document.querySelector('#content_teams_involved').innerText = "Teams involved: " + project["teams_involved"];
   document.querySelector('#collapse').style.display = "block";
   setTimeout(function(){smoothScroll(document.querySelector("#content2"));},1000);
+}
 }
 
 window.smoothScroll = function(target) {
