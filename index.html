@@ -261,7 +261,7 @@ prove essential in situations of catastrophe, where finding trapped souls faster
 <div class="post-item-description">
 <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
 <span class="post-meta-comments"><a href="#"><i class="fa fa-comments-o"></i></a></span>
-<h2><a href="#">Robotic Arm
+<h2 id = "content2"><a href="#">Robotic Arm
 </a></h2>
 <button class="item-link" onclick="expand_minor_projects(2)">Read More <i class="icon-chevron-right"></i></button>
 </div>
@@ -272,9 +272,28 @@ prove essential in situations of catastrophe, where finding trapped souls faster
 </div>
 </section>
 
-<section id = "datadiv" class="content background-grey" style="font-size: 1.2em; margin-top: -4%; display:none">
+<script>
+function collapse_minor_projects() {
+  smoothScroll(document.querySelector('#scrolluploc'));
+  myfn();
+  function myfn(){
+    setTimeout(function(){
+      document.querySelector("#content_title").innerHTML = "";
+      document.querySelector("#content_image").innerHTML = "";
+      document.querySelector('#content_description').innerHTML = "";
+      document.querySelector('#content_deadline').innerHTML = "";
+      document.querySelector('#content_teams_involved').innerHTML = "";
+      document.querySelector('#datadiv').style.display = "none";
+    }, 1000);
+  }
+  setTimeout(function(){
+      $("#datadiv").slideToggle(300, "swing", function(){/*done*/});
+    }, 700);
+  
+}
+</script>
 
-  <br id = "content">
+<section id = "datadiv" class="content background-grey" style="font-size: 1.2em; margin-top: -4%; display:none">
   <div class="container">
     <div class="row" style="margin-top: -5%">
       <div class="heading-text heading-section text-center"><br><br>
@@ -293,6 +312,7 @@ prove essential in situations of catastrophe, where finding trapped souls faster
     <br />
     <span id="content_deadline"> </span> <br />
     <span id="content_teams_involved"> </span><br /><br />
+    
     <button class="item-link" id="collapse" onclick="collapse_minor_projects()">Read Less <i class="icon-chevron-right"></i></button>
   </div>
 </section>

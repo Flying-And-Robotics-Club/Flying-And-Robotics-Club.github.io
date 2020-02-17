@@ -28,7 +28,10 @@ var roboticArm = {
 minorProjects.push(roboticArm);
 
 function expand_minor_projects(index) {
-  document.querySelector('#datadiv').style.display = "block";
+  setTimeout(function(){
+    $("#datadiv").slideToggle(300, "swing", function(){/*done*/});
+  }, 700);
+  //document.querySelector('#datadiv').style.display = "block";
   var project = minorProjects[index];
   document.querySelector('#content_title').innerText = project["title"];
   var cover = document.createElement("img");
@@ -40,24 +43,7 @@ function expand_minor_projects(index) {
   document.querySelector('#content_deadline').innerText = "Expected deadline: " + project["deadline"];
   document.querySelector('#content_teams_involved').innerText = "Teams involved: " + project["teams_involved"];
   document.querySelector('#collapse').style.display = "block";
-  smoothScroll(document.querySelector("#content"));
-}
-
-function collapse_minor_projects() {
-  smoothScroll(document.querySelector('#scrolluploc'));
-  
-  myfn();
-  function myfn(){
-    setTimeout(function(){
-      document.querySelector('#datadiv').style.display = "none";
-      document.querySelector("#content_title").innerHTML = "";
-      document.querySelector("#content_image").innerHTML = "";
-      document.querySelector('#content_description').innerHTML = "";
-      document.querySelector('#content_deadline').innerHTML = "";
-      document.querySelector('#content_teams_involved').innerHTML = "";
-      document.querySelector('#collapse').style.display = "none";
-    }, 700);
-  }
+  setTimeout(function(){smoothScroll(document.querySelector("#content2"));},1000);
 }
 
 window.smoothScroll = function(target) {
