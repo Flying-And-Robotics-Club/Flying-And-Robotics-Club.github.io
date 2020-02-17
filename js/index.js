@@ -28,6 +28,7 @@ var roboticArm = {
 minorProjects.push(roboticArm);
 
 function expand_minor_projects(index) {
+  document.querySelector('#datadiv').style.display = "none";
   setTimeout(function(){
     $("#datadiv").slideToggle(300, "swing", function(){/*done*/});
   }, 700);
