@@ -2,17 +2,27 @@
 <html lang="en">
 
 <head>
+<style>
+@media screen and (max-width: 1200px) {
+    #logo1,#logo2{
+        display: none;
+    }
+}
+#facad {
+  margin:auto;
+}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable = "no"/>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="Official FARC | PROJECTS Page">
+<meta name="description" content="Major Project Page | FARC-NITK">
 <link rel="icon" type="image/png" href="FARC.ico">
+<script src="js/index.js"></script>
 
-<title>Our Projects</title>
+<title>Major Project | FARC</title>
 
 <link href="css/plugins.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
 <div class="body-inner">
 <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
@@ -21,8 +31,8 @@
 
 <div id="logo">
 <a href="index.html">
-<span class="logo-default"><img src="FARC.png" style="height:50px;"></img>&nbsp;&nbsp;&nbsp;FARC</span>
-<span class="logo-dark"><img src="FARC.png" style="height:50px;"></img>&nbsp;&nbsp;&nbsp;FARC</span>
+<span class="logo-default"><img id = "logo1" src="FARC.png" style="height:50px;"></img>&nbsp;&nbsp;&nbsp;FARC&nbsp;&nbsp;&nbsp;</span>
+<span class="logo-dark"><img id = "logo2" src="FARC.png" style="height:50px;"></img>&nbsp;&nbsp;&nbsp;FARC&nbsp;&nbsp;&nbsp;</span>
 </a>
 </div>
 
@@ -37,11 +47,11 @@
 <li><a href="index.html">Home</a></li>
 <li class="dropdown"><a>Student Interest Groups</a>
 <ul class="dropdown-menu">
-<li><a href="Robocode-2.html">Robocode</a></li>
+<li><a href="RoboCode.html">Robocode</a></li>
 <li><a href="RoboTorque.html">Robotorque</a></li>
 <li><a href="RoboTronix.html">Robotronix</a></li>
-<li><a href="Aerowing.html">Aerowing</a></li>
-<li><a href="Digimedia.html">Digimedia</a></li>
+<li><a href="AeroWing.html">Aerowing</a></li>
+<li><a href="DigiMedia.html">Digimedia</a></li>
 </ul>
 </li>
 <li class="dropdown"><a href="#">Projects</a>
@@ -74,7 +84,7 @@
 </li>
 
 
-<li><a href="#">Gallery</a></li>
+<li><a href="gallery.html">Gallery</a></li>
 <li><a href="about-us.html">About Us</a></li>
 </nav>
 </div>
@@ -128,6 +138,7 @@
 </div>
 </div>
 </section>
+
 <section class="box-fancy section-fullwidth text-light p-b-0">
 <div class="row">
 <div style="background-color:#917d5d" class="col-lg-4">
@@ -147,26 +158,44 @@
 </div>
 </div>
 </section>
-<section class="background-grey">
+
+<section class="content">
 <div class="container">
 <div class="heading-text heading-section text-center">
 <h2>OUR TEAM</h2>
-<span class="lead">The Core team responsible for the success of the project</span>
+</div>
+<div class="row team-members">
+<div id = "facad" class="col-lg-4">
+<div class="team-member">
+<div class="team-image">
+<img src="images/team/Facad-2.jpeg">
+</div>
+<div class="team-desc">
+<h3>Dr. Pruthviraj U.</h3>
+<span>Faculty Advisor</span>
+<p></p>
+<div class="align-center">
+<a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+<i class="icon-mail"></i>
+<span>Mail</span>
+</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-  <div class="row team-members">
-  <div id = "facad" class="col-lg-4">
+<div class="row team-members">
+  <div class="col-lg-3">
   <div class="team-member">
   <div class="team-image">
-  <!-- <img src="images/team/Faculty Advisor.jfif">  -->
-  <img src="images/team/Facad.jpeg">
+  <img src="images/team/Nishant Kumar.jpeg">
   </div>
   <div class="team-desc">
-  <h3>Dr. Pruthviraj U.</h3>
-  <span>Faculty Advisor</span>
-  <p></p>
+  <h3>Nishant Kumar</h3>
+  <span>Convenor</span>
+  <p> </p>
   <div class="align-center">
-    <!--
   <a class="btn btn-xs btn-slide btn-light" href="#">
   <i class="fab fa-facebook-f"></i>
   <span>Facebook</span>
@@ -179,7 +208,99 @@
   <i class="fab fa-instagram"></i>
   <span>Instagram</span>
   </a>
-  -->
+  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+  <i class="icon-mail"></i>
+  <span>Mail</span>
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-lg-3">
+  <div class="team-member" align="center">
+  <div class="team-image">
+  <img src="images/team/Ayush Saxena.jpeg">
+  </div>
+  <div class="team-desc">
+  <h3>Ayush Saxena.</h3>
+  <span>Joint Convenor</span>
+  <p></p>
+  <div class="align-center">
+  <a class="btn btn-xs btn-slide btn-light" href="#">
+  <i class="fab fa-facebook-f"></i>
+  <span>Facebook</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
+  <i class="fab fa-twitter"></i>
+  <span>Twitter</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
+  <i class="fab fa-instagram"></i>
+  <span>Instagram</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+  <i class="icon-mail"></i>
+  <span>Mail</span>
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-lg-3">
+  <div class="team-member">
+  <div class="team-image">
+  <img src="images/team/Saurabh.jpeg">
+  </div>
+  <div class="team-desc">
+  <h3>Saurabh Dewangan</h3>
+  <span>Executive Member</span>
+  <p></p>
+  <div class="align-center">
+  <a class="btn btn-xs btn-slide btn-light" href="#">
+  <i class="fab fa-facebook-f"></i>
+  <span>Facebook</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
+  <i class="fab fa-twitter"></i>
+  <span>Twitter</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
+  <i class="fab fa-instagram"></i>
+  <span>Instagram</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
+  <i class="icon-mail"></i>
+  <span>Mail</span>
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-lg-3">
+  <div class="team-member">
+  <div class="team-image">
+  <img src="images/team/yash.heic">
+  </div>
+  <div class="team-desc">
+  <h3>Yash Agrawal</h3>
+  <span>Executive Member</span>
+  <p></p>
+  <div class="align-center">
+  <a class="btn btn-xs btn-slide btn-light" href="#">
+  <i class="fab fa-facebook-f"></i>
+  <span>Facebook</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
+  <i class="fab fa-twitter"></i>
+  <span>Twitter</span>
+  </a>
+  <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
+  <i class="fab fa-instagram"></i>
+  <span>Instagram</span>
+  </a>
   <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
   <i class="icon-mail"></i>
   <span>Mail</span>
@@ -189,306 +310,14 @@
   </div>
   </div>
   </div>
-
-  <div class="row team-members">
-    <div class="col-lg-3">
-    <div class="team-member">
-    <div class="team-image">
-    <img src="images/team/Nishant Kumar.jpeg">
-    </div>
-    <div class="team-desc">
-    <h3>Nishant Kumar</h3>
-    <span>Convenor</span>
-    <p> </p>
-    <div class="align-center">
-    <a class="btn btn-xs btn-slide btn-light" href="#">
-    <i class="fab fa-facebook-f"></i>
-    <span>Facebook</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-    <i class="fab fa-twitter"></i>
-    <span>Twitter</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-    <i class="fab fa-instagram"></i>
-    <span>Instagram</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-    <i class="icon-mail"></i>
-    <span>Mail</span>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="col-lg-3">
-    <div class="team-member" align="center">
-    <div class="team-image">
-    <img src="images/team/Ayush Saxena.jpeg">
-    </div>
-    <div class="team-desc">
-    <h3>Ayush Saxena.</h3>
-    <span>Joint Convenor</span>
-    <p></p>
-    <div class="align-center">
-    <a class="btn btn-xs btn-slide btn-light" href="#">
-    <i class="fab fa-facebook-f"></i>
-    <span>Facebook</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-    <i class="fab fa-twitter"></i>
-    <span>Twitter</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-    <i class="fab fa-instagram"></i>
-    <span>Instagram</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-    <i class="icon-mail"></i>
-    <span>Mail</span>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="col-lg-3">
-    <div class="team-member">
-    <div class="team-image">
-    <img src="images/team/Saurabh.jpeg">
-    </div>
-    <div class="team-desc">
-    <h3>Saurabh Dewangan</h3>
-    <span>Executive Member</span>
-    <p></p>
-    <div class="align-center">
-    <a class="btn btn-xs btn-slide btn-light" href="#">
-    <i class="fab fa-facebook-f"></i>
-    <span>Facebook</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-    <i class="fab fa-twitter"></i>
-    <span>Twitter</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-    <i class="fab fa-instagram"></i>
-    <span>Instagram</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-    <i class="icon-mail"></i>
-    <span>Mail</span>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-3">
-    <div class="team-member">
-    <div class="team-image">
-    <img src="images/team/7.jpg">
-    </div>
-    <div class="team-desc">
-    <h3>Yash Agrawal</h3>
-    <span>Executive Member</span>
-    <p></p>
-    <div class="align-center">
-    <a class="btn btn-xs btn-slide btn-light" href="#">
-    <i class="fab fa-facebook-f"></i>
-    <span>Facebook</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-    <i class="fab fa-twitter"></i>
-    <span>Twitter</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-    <i class="fab fa-instagram"></i>
-    <span>Instagram</span>
-    </a>
-    <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-    <i class="icon-mail"></i>
-    <span>Mail</span>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-  </div>
-
-
-
-<!--
-<div class="row team-members team-members-shadow m-b-40">
-<div class="col-lg-3">
-<div class="team-member">
-<div class="team-image">
-<img src="images/team/6.jpg">
-</div>
-<div class="team-desc">
-<h3>Alea Smith</h3>
-<span>Software Developer</span>
-<p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-<div class="align-center">
-<a class="btn btn-xs btn-slide btn-light" href="#">
-<i class="fab fa-facebook-f"></i>
-<span>Facebook</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-<i class="fab fa-twitter"></i>
-<span>Twitter</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-<i class="fab fa-instagram"></i>
-<span>Instagram</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-<i class="icon-mail"></i>
-<span>Mail</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="team-member">
-<div class="team-image">
-<img src="images/team/7.jpg">
-</div>
-<div class="team-desc">
-<h3>Ariol Doe</h3>
-<span>Software Developer</span>
-<p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-<div class="align-center">
-<a class="btn btn-xs btn-slide btn-light" href="#">
- <i class="fab fa-facebook-f"></i>
-<span>Facebook</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-<i class="fab fa-twitter"></i>
-<span>Twitter</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-<i class="fab fa-instagram"></i>
-<span>Instagram</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-<i class="icon-mail"></i>
-<span>Mail</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="team-member">
-<div class="team-image">
-<img src="images/team/8.jpg">
-</div>
-<div class="team-desc">
-<h3>Emma Ross</h3>
-<span>Software Developer</span>
-<p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-<div class="align-center">
-<a class="btn btn-xs btn-slide btn-light" href="#">
-<i class="fab fa-facebook-f"></i>
-<span>Facebook</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-<i class="fab fa-twitter"></i>
-<span>Twitter</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-<i class="fab fa-instagram"></i>
-<span>Instagram</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-<i class="icon-mail"></i>
-<span>Mail</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="team-member">
-<div class="team-image">
-<img src="images/team/9.jpg">
-</div>
-<div class="team-desc">
-<h3>Victor Loda</h3>
-<span>Software Developer</span>
-<p>The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet. </p>
-<div class="align-center">
-<a class="btn btn-xs btn-slide btn-light" href="#">
-<i class="fab fa-facebook-f"></i>
-<span>Facebook</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-<i class="fab fa-twitter"></i>
- <span>Twitter</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-<i class="fab fa-instagram"></i>
-<span>Instagram</span>
-</a>
-<a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-<i class="icon-mail"></i>
-<span>Mail</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  </div>s
 </section>
-<section>
--->
-<br><br>
-<!--
-<div class="container">
-<div class="heading-text text-center">
-<h2>What people are saying!</h2>
-<p class="lead text-center">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.</p>
-</div>
-
-<div class="carousel arrows-visibile testimonial testimonial-single testimonial-left" data-items="1">
-
-<div class="testimonial-item">
-<img src="images/team/9.jpg" alt="">
-<p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-<span>Alan Monre</span>
-<span>CEO, Square Software</span>
-</div>
-
-
-<div class="testimonial-item">
-<img src="images/team/9.jpg" alt="">
-<p>Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!</p>
-<span>Alan Monre</span>
-<span>CEO, Square Software</span>
-</div>
-
-
-<div class="testimonial-item">
-<img src="images/team/9.jpg" alt="">
-<p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-<span>Alan Monre</span>
-<span>CEO, Square Software</span>
-</div>
-
-</div>
-
-</div>
-</section>
-
--->
 
 <footer id="footer">
 <div class="footer-content">
 <div class="container">
 <div class="row">
-<div id = "row2" class="col-lg-5">
+<div id = "row2" class="col-lg-12">
 <div class="widget" align = "center">
 <div class="widget-title"><h3>FARC on Social Media</h3></div>
 
@@ -496,22 +325,21 @@
   <a id = "a" class="btn btn-lg btn-slide btn-light" href="mailto:farc@nitk.edu.in" data-width="120">
   <i class="icon-mail"></i>
   <span>Mail</span>
-  </a> &nbsp;
+  </a>
   <a id = "b" class="btn btn-lg btn-slide btn-light" target="_blank" href="http://instagram.com/farcnitk" data-width="190">
   <i class="fab fa-instagram"></i>
   <span>Instagram</span>
-  </a> &nbsp;
+  </a>
   <a id = "c" class="btn btn-lg btn-slide btn-light" target="_blank" href="https://www.facebook.com/FlyingandRoboticsClubOfficial/" data-width="180">
   <i class="fab fa-facebook-f"></i>
   <span>Facebook</span>
-  </a> &nbsp;
-  <a id = "c" class="btn btn-lg btn-slide btn-light" target="_blank" href="https://www.linkedin.com/company/flying-and-robotics-club-nitk/?viewAsMember=true" data-width="180">
+  </a>
+  <a id = "c" class="btn btn-lg btn-slide btn-light" target="_blank" href="https://www.linkedin.com/company/flying-and-robotics-club-nitk/?viewAsMember=true" data-width="160">
   <i class="fab fa-linkedin"></i>
   <span>LinkedIn</span>
   </a>
   </div>
-
-</div>
+</footer>
 
 <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
 
@@ -520,6 +348,4 @@
 
 <script src="js/functions.js"></script>
 </body>
-
-<!-- Mirrored from inspirothemes.com/polo/page-about-extended.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jan 2020 19:15:49 GMT -->
 </html>
