@@ -7,7 +7,7 @@
 <meta name="description" content="Official FARC | NITK Page">
 <link rel="icon" type="image/png" href="FARC.ico">
 
-<title>FARC | Ornithopter</title>
+<title>FARC | Tronix Winter Drive</title>
 
 <link href="css/plugins.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -84,12 +84,12 @@
       </div>
     </header>
 
-    <section id="section1" class="halfscreen" data-bg-parallax="images/blog/Bird.jpg">
+    <section id="section1" class="halfscreen" data-bg-parallax="images/MINOR PROJECTS/Winter Drive/circuit.jpg">
       <div class="container text-light text-center">
         <div class="container-fullscreen">
           <div class="text-middle">
             <div class="heading-text" data-animate="fadeInDown" data-animate-delay="100">
-              <h2>ORNITHOPTER</h2>
+              <h2>ROBOTRONIX WINTER DRIVE</h2>
             </div>
           </div>
         </div>
@@ -135,33 +135,225 @@
     </section>
 
     <section class="content background-grey">
-          <div class="content col-lg-12" style="padding-left:15%; padding-right:10%">
-    <ul class="timeline">
-
-      <li class="timeline-item">
-        <div class="timeline-icon">1</div>
-        <h2>Development
-        </h2>
-        <p align="justify">
-          <font size="3px">This round consists of a problem statement in the fields of Robotics, Mechanical, Chemical, Civil, Metallurgy. The teams can take part in one or more problem statements. The teams have to come up with a feasible solution
-            for the same. On March 5th, solution (40%) needs to be submitted via email in a given template.
-            The teams will be shortlisted and announced by March 8th for the finals round of Visionnaire to be held on March 21st and 22nd.</font>
-        </p>
-      </li>
+      <div class="container">
+        <div class="heading-text heading-section text-center m-b-40">
+          <h2>OUR PROJECTS</h2>
+          <span class="lead"></span>
+        </div>
+        <br><br>
+        <div class="row">
 
 
-      <li class="timeline-item">
-        <div class="timeline-icon">2</div>
-        <h2>Testing
-        </h2>
-        <p align="justify">
-          <font size="3px">This round is scheduled to be held on March 21st and 22nd. The shortlisted teams have to present their solution in a given format with the aid of any simulating platform of their own choice unless and until mentioned
-            explicitly.
-            Presenting time will be 20 minutes in front of the company officials followed by a 5 min. questionnaire.</font>
-        </p>
-      </li>
-    </ul>
-  </section>
+          <div class="col-lg-8" align="justify">
+            <div class="m-b-40">
+              <span class="lead">
+                <h2>#1 Anologue-to-Digital Converter</h2>
+                <p>In electronics, an analog-to-digital converter (ADC, A/D, or A-to-D) is a system that converts an analog signal, such as a sound picked up by a microphone or light
+                  entering a digital camera, into a digital signal.
+                  <br><br>
+                  <h4>Problem Statement</h4>
+                  <p>
+                  1. Design a 2-bit ADC using the parallel direct conversion method.<br>
+                  2. Implement the design on a breadboard using discrete components.<br>
+                  3. Determine the sampling rate and ideal signal-to-quantization-noise ratio of the ADC.<br>
+                  4. Prepare a brief report on the design and implementation details. Mention how the answers to Question 3 were obtained.<br>
+                  5. (Advanced) Try designing the ADC using a different method/type of your choice.<br>
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+          </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+          <div class="col-lg-8" align="justify">
+            <div class="m-b-40">
+              <span class="lead">
+                <h2>#2 Arithmetic Logic Unit</h2>
+                <p>An arithmetic logic unit (ALU) is a combinational digital electronic circuit that performs arithmetic and bitwise
+                  operations on integer binary numbers. This is in contrast to a floating-point unit (FPU), which operates on floating point numbers.
+                  An ALU is a fundamental building block of many types of computing circuits, including the central processing unit (CPU) of
+                  computers, FPUs, and graphics processing units (GPUs). A single CPU, FPU or GPU may contain multiple ALUs.
+                  <br><br>
+                  <h4>Problem Statement</h4>
+                  <p>
+                    The ALU (Arithmetic Logic Unit) computes one of the following functions on two 16-bit inputs <br><br>
+                    1. x+y 2. x-y 3. y-x 4. 0
+                    5. 1 6. -1 7. x 8. y
+                    9. –x 10. –y 11. !x 12. !y
+                    13. x+1 14. y+1 15. x-1 16. y-1
+                    17. x&y 18. x|y <br>
+                      according to 6 input bits denoted zx, nx, zy, ny, f, no. <br>
+                      In addition, the ALU computes two 1-bit outputs:
+                       if the ALU output == 0, zr is set to 1; otherwise zr is set to 0;
+                       if the ALU output < 0, ng is set to 1; otherwise ng is set to 0.
+                      Implementation: the ALU logic manipulates the x and y inputs and operates on
+                      the resulting values, as follows:
+                       if (zx == 1) set x = 0 // 16-bit constant
+                       if (nx == 1) set x = !x // bitwise not
+                       if (zy == 1) set y = 0 // 16-bit constant
+
+                       if (ny == 1) set y = !y // bitwise not
+                       if (f == 1) set out = x + y // integer 2's complement addition
+                       if (f == 0) set out = x & y // bitwise and
+                       if (no == 1) set out = !out // bitwise not
+                       if (out == 0) set zr = 1
+                       if (out < 0) set ng = 1<br>
+                      1. Design the ALU in Verilog on Xilinx Vivado without using any conditional or
+                      looping constructs (like if, for, case). Complete up to behavioural simulation
+                      stage, i.e., the first stage in the Vivado workflow.<br>
+                      2. Prepare a brief report on the design details.<br>
+                </p>
+              </span>
+            </div>
+          </div>
+          <br><br>
+
+          <div class="col-lg-4">
+            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8" align="justify">
+            <div class="m-b-40">
+              <span class="lead">
+                <h2>#3 Finite Impulse Response filter</h2>
+                <p>In signal processing, a finite impulse response (FIR) filter is a filter whose impulse
+                  response (or response to any finite length input) is of finite duration, because it
+                  settles to zero in finite time. This is in contrast to infinite impulse response (IIR)
+                    filters, which may have internal feedback and may continue to respond
+                    indefinitely (usually decaying).
+                  <br><br>
+                  <h4>Problem Statement</h4>
+                  <p>
+                    1. Design an 8-tap FIR filter module with Verilog on Xilinx Vivado. <br>
+                      a. Choose the tap values to be anything. This is just to verify the
+                        working.<br>
+                      b. Complete the design till the behavioural simulation stage, i.e, the first
+                        step in the Vivado workflow. <br>
+
+                    2. Prepare a brief report on the design details. <br>
+                    3. (Advanced) Complete the design till the post-synthesis stage. <br>
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="m-b-40">
+              <span class="lead">
+                <h2>#4 Morse Code Encoder & Decoder</h2>
+                <p>Morse code is a character encoding scheme used in telecommunication that
+                  encodes text characters as standardized sequences of two different signal
+                  durations called dots and dashes or dits and dahs. Morse code is named for
+                  Samuel F. B. Morse, an inventor of the telegraph.
+                  <br><br>
+                  <h4>Problem Statement</h4>
+                  <p>
+                    1. Design a Morse code encoder and decoder. <br>
+                    a. You may use any signal for encoding (eg: visible light or an audio
+                    signal) so long as you can measure it and reproduce it. <br>
+
+                    2. Prepare a brief report on the design details. <br>
+                </p>
+              </div>
+              </span>
+            </div>
+
+          <div class="col-lg-4">
+            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-8"  align="justify">
+            <div class="m-b-40">
+              <span class="lead">
+                <h2>#5 People Counter</h2>
+                <p>A people counter is an electronic device that is used to measure the number of
+                  people traversing a certain passage or entrance. Examples include simple manual
+                  clickers, infrared beams, thermal imaging systems, WiFi trackers and video
+                  counters using advanced machine learning algorithms. They are commonly used
+                  by retail establishments to judge the effectiveness of marketing campaigns,
+                  building design and layout, and the popularity of particular brands.
+                  <br><br>
+                  <h4>Problem Statement</h4>
+                  <p>
+                    1. Design a people counter. <br>
+                    a. The counters should be installed in at least two locations so try to
+                    create a scalable design and a simple but effective method of
+                    counting people. <br>
+                    b. Have a LED setup in each location that turns off when the people
+                    counter records a 0 and turns on if otherwise. <br>
+                    2. Prepare a brief report on the design details. <br>
+                    3. (Advanced) Create a simple app that indicates the number of people at each
+                    of the locations and allows for a threshold to be set for the LED setup to
+                    turn on. (Example, if the threshold is 5, the LED setup will turn on only if 5
+                    or more people are recorded at the location at that time). <br>
+                </p>
+              </div>
+              </span>
+            </div>
+
+          <div class="col-lg-4">
+            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-8"  align="justify">
+            <div class="m-b-40">
+              <span class="lead">
+                <h2>#6 Software PID Controller</h2>
+                <p>A proportional–integral–derivative controller (PID controller or three-term
+                  controller) is a control loop mechanism employing feedback that is widely used in
+                  industrial control systems and a variety of other applications requiring
+                  continuously modulated control. A PID controller continuously calculates an error
+                  value e(t) as the difference between a desired setpoint (SP) and a measured
+                  process variable (PV) and applies a correction based on proportional, integral, and
+                  derivative terms (denoted P, I, and D respectively), hence the name
+                  <br><br>
+                  <h4>Problem Statement</h4>
+                  <p>
+                    1. Design a software PID controller for a DC motor to ensure a steady speed
+                    (fixed rpm). You can omit the differential or integral term as you see fit. <br>
+                    2. Implement the design. <br>
+                    a. You may choose the value of rpm (setpoint) <br>
+                    b. Determine a way to measure the process variable. <br>
+                    c. The process of selecting the constants for the proportional, integral,
+                    and differential terms is trial-and-error. <br>
+
+                    3. Prepare a brief report on the design and implementation details. <br>
+                    4. (Advanced) Account for integral wind-up in the design and implementation. <br>
+                </p>
+              </div>
+              </span>
+            </div>
+
+          <div class="col-lg-4">
+            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+          </div>
+        </div>
+
+
+
+        <br>
+
+    </section>
+
 
     <section class="background-white">
       <div class="container">
@@ -312,7 +504,7 @@
       </div>
     </section>
 
-    <footer id="footer">
+    <footer id="footer" class="background-white">
       <div class="footer-content">
         <div class="container">
           <div class="row">
