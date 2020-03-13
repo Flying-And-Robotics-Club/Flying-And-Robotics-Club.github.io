@@ -34,12 +34,7 @@ var navbar = '\
               <ul class="dropdown-menu">\
                 <li><a href="major-project.html">Major Project</a>\
                 </li>\
-                <li class="dropdown-submenu">\
-                  <a href="#">Minor Projects</a>\
-                  <ul class="dropdown-menu">\
-                    <li><a href="MinorProjects.html">Ongoing</a></li>\
-                    <li><a href="Past-MinorProjects.html">Past</a></li>\
-                  </ul>\
+                <li>  <a href="MinorProjects.html">Ongoing</a>\
                 </li>\
               </ul>\
             </li>\
