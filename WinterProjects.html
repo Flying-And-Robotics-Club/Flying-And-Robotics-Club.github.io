@@ -115,23 +115,17 @@
             <div class="row">
               <div class="col-lg-6" align="justify">
                 <font size=3px>
-                  <p>There has been an increasing interest in the development of MAV's (Micro-Air Vehicles). The term MAV refers to a new type of remotely controlled aircraft (UAV) that is significantly smaller than similar aircraft's, obtainable by using state of the art technology. The target dimension for MAVs today is approximately 15 centimeters (six inches) and development of insect-sized aircrafts is reportedly expected in the near future.
+                  <p>All of the applications which make our life easier and enjoyable such as Television, Radio, Computers, Mobiles etc. are designed and optimized by new technological growth of electronics and communication systems around us. This field of engineering deals with the electronic devices, circuits, communication equipments like transmitter, receiver, integrated circuits (IC).
                   </p>
-                  <p>Potential military use is one of the driving factors, although MAVs are also being used commercially and in scientific, police, and mapping applications. There are many different types of MAV's that have been developed over the years. The ornithopter is one among them.
+                  <p>Despite the vast potential of growth and excitement, there are several limitations to the current technology which needs to be addressed and optimized for efficient communication and throughput of systems.
                   </p>
-                  <p>
-                    An ornithopter is a machine designed to achieve flight by flapping wings like a real bird. The idea was to create an ornithopter from scratch, to control it remotely, and of course to make it fly!
-                    </p>
                 </font>
               </div>
               <div class="col-lg-6" align="justify">
                 <font size=3px>
-
-                    <p>The wingspan is the first parameter to choose, and in this ornithopter shall be 1.2 m. The approximate weight and frequency of flapping can also be figured out, which will automatically decide the rating of motor and gear ratio to be used.
+                    <p>Keeping this scope in mind, the RoboTronix team of Flying and Robotics Club underwent a drive the fall of 2019 to reinvent modern solutions from scratch to get a good idea about every aspect of its production.
                     </p>
-                    <p>As for the flapping mechanism, the transverse shaft mechanism is used. In this mechanism, the rotating gears and the flapping wings are not on the same plane, so the connector has to be able to rotate. This mechanism makes the ornithopter heavy but it also allows for the most symmetrical flap. Control of the ornithopter is achieved by a flight controller and receiver.
-                    </p>
-                    <p>The power module consists of li-po batteries, esc's and servos. Carbon fiber is used in making the fuselage of the ornithopter, and as for the wings, nylon fabric is used.
+                    <p>This drive served as building blocks for laying foundation on advanced understanding of modern devices like cell phones, computers, electric and autonomous vehicles, renewable energy grids, LED lighting, advanced medical devices, and much more. This drive raised the bar of our club's electronics group with new scopes for bigger growth and improvement.
                   </p>
                 </font>
               </div>
@@ -144,7 +138,7 @@
     <section class="content background-grey">
       <div class="container">
         <div class="heading-text heading-section text-center m-b-40">
-          <h2>THE WINTER DRIVE</h2>
+          <h2>THE PROJECTS</h2>
           <span class="lead"></span>
         </div>
         <br><br>
@@ -174,7 +168,7 @@
           </div>
 
           <div class="col-lg-4">
-            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+            <img alt="" class="img-fluid" src="images/MINOR PROJECTS/Winter Drive/ADC.jpg" style="margin-bottom:5%">
           </div>
         </div>
         <br><br>
@@ -183,38 +177,63 @@
           <div class="col-lg-8" align="justify">
             <div class="m-b-40">
               <span class="lead">
-                <h2>#2 Arithmetic Logic Unit</h2>
+                <h2><font color = "blue">#2 Arithmetic Logic Unit</font></h2>
                 <p>An arithmetic logic unit (ALU) is a combinational digital electronic circuit that performs arithmetic and bitwise
                   operations on integer binary numbers. This is in contrast to a floating-point unit (FPU), which operates on floating point numbers.
                   An ALU is a fundamental building block of many types of computing circuits, including the central processing unit (CPU) of
                   computers, FPUs, and graphics processing units (GPUs). A single CPU, FPU or GPU may contain multiple ALUs.
                   <br><br>
-                  <button class="item-link" onclick="buttonClick(2)">READ MORE<i class="icon-chevron-right"></i></button>
+                  <button class="btn btn-light" onclick="buttonClick(2)">READ MORE<i class="icon-chevron-right"></i></button>
                   <br>
                   <div id = "data2"><h4 id = "title2" data-animate = "fadeIn">Problem Statement</h4>
                   <p id = "problem2" data-animate = "fadeIn">
                     The ALU (Arithmetic Logic Unit) computes one of the following functions on two 16-bit inputs <br><br>
-                    1. x+y 2. x-y 3. y-x 4. 0
-                    5. 1 6. -1 7. x 8. y
-                    9. –x 10. –y 11. !x 12. !y
-                    13. x+1 14. y+1 15. x-1 16. y-1
-                    17. x&y 18. x|y <br>
+                    <table style="width:100%">
+                      <tr>
+                        <td><p>1. x+y</td>
+                        <td><p>2. x-y</td>
+                        <td><p>3. y-x</td>
+                        <td><p>4. 0 </td>
+                        </tr>
+                        <tr>
+                          <td><p>5. 1</td>
+                          <td><p>6. -1</td>
+                          <td><p>8. y</td>
+                          <td><p>7. x</td>
+                        </tr>
+                        <tr>
+                          <td><p>9. -x</td>
+                          <td><p>10. -y</td>
+                          <td><p>11. !x</td>
+                          <td><p>12. !y</td>
+                        </tr>
+                        <tr>
+                          <td><p>13. x+1</td>
+                          <td><p>14. y+1</td>
+                          <td><p>15. x-1 </td>
+                          <td><p>16 y-1</td>
+                        </tr>
+                        <tr>
+                          <td><p>18. x|y </td>
+                          <td><p>17. x&y </td>
+                        </tr>
+                      </table>
+                      <p>
                       according to 6 input bits denoted zx, nx, zy, ny, f, no. <br>
-                      In addition, the ALU computes two 1-bit outputs:
-                       if the ALU output == 0, zr is set to 1; otherwise zr is set to 0;
-                       if the ALU output < 0, ng is set to 1; otherwise ng is set to 0.
+                      In addition, the ALU computes two 1-bit outputs: <br>
+                      --> if the ALU output == 0, zr is set to 1; otherwise zr is set to 0; <br>
+                      --> if the ALU output < 0, ng is set to 1; otherwise ng is set to 0. <br><br>
                       Implementation: the ALU logic manipulates the x and y inputs and operates on
-                      the resulting values, as follows:
-                       if (zx == 1) set x = 0 // 16-bit constant
-                       if (nx == 1) set x = !x // bitwise not
-                       if (zy == 1) set y = 0 // 16-bit constant
-
-                       if (ny == 1) set y = !y // bitwise not
-                       if (f == 1) set out = x + y // integer 2's complement addition
-                       if (f == 0) set out = x & y // bitwise and
-                       if (no == 1) set out = !out // bitwise not
-                       if (out == 0) set zr = 1
-                       if (out < 0) set ng = 1<br>
+                      the resulting values, as follows: <br>
+                      --> if (zx == 1) set x = 0 // 16-bit constant <br>
+                      --> if (nx == 1) set x = !x // bitwise not <br>
+                      --> if (zy == 1) set y = 0 // 16-bit constant <br>
+                      --> if (ny == 1) set y = !y // bitwise not <br>
+                      --> if (f == 1) set out = x + y // integer 2's complement addition <br>
+                      --> if (f == 0) set out = x & y // bitwise and <br>
+                      --> if (no == 1) set out = !out // bitwise not <br>
+                      --> if (out == 0) set zr = 1 <br>
+                      --> if (out < 0) set ng = 1<br> <br>
                       1. Design the ALU in Verilog on Xilinx Vivado without using any conditional or
                       looping constructs (like if, for, case). Complete up to behavioural simulation
                       stage, i.e., the first stage in the Vivado workflow.<br>
@@ -226,7 +245,7 @@
           <br><br>
 
           <div class="col-lg-4">
-            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+            <img alt="" class="img-fluid" src="images/MINOR PROJECTS/Winter Drive/ALU.jfif" style="margin-bottom:5%">
           </div>
         </div>
 
@@ -234,23 +253,22 @@
           <div class="col-lg-8" align="justify">
             <div class="m-b-40">
               <span class="lead">
-                <h2>#3 Finite Impulse Response filter</h2>
+                <h2><font color="blue">#3 Finite Impulse Response filter</font></h2>
                 <p>In signal processing, a finite impulse response (FIR) filter is a filter whose impulse
                   response (or response to any finite length input) is of finite duration, because it
                   settles to zero in finite time. This is in contrast to infinite impulse response (IIR)
                     filters, which may have internal feedback and may continue to respond
                     indefinitely (usually decaying).
                   <br><br>
-                  <button class="item-link" onclick="buttonClick(3)">READ MORE<i class="icon-chevron-right"></i></button>
+                  <button class="btn btn-light" onclick="buttonClick(3)">READ MORE<i class="icon-chevron-right"></i></button>
                   <br>
                   <div id = "data3"><h4 id = "title3" data-animate = "fadeIn">Problem Statement</h4>
                   <p id = "problem3" data-animate = "fadeIn">
                     1. Design an 8-tap FIR filter module with Verilog on Xilinx Vivado. <br>
-                      a. Choose the tap values to be anything. This is just to verify the
+                    &emsp;  a. Choose the tap values to be anything. This is just to verify the
                         working.<br>
-                      b. Complete the design till the behavioural simulation stage, i.e, the first
+                    &emsp;  b. Complete the design till the behavioural simulation stage, i.e, the first
                         step in the Vivado workflow. <br>
-
                     2. Prepare a brief report on the design details. <br>
                     3. (Advanced) Complete the design till the post-synthesis stage. <br>
                 </p></div>
@@ -259,7 +277,7 @@
           </div>
 
           <div class="col-lg-4">
-            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+            <img alt="" class="img-fluid" src="images/MINOR PROJECTS/Winter Drive/Filter.png" style="margin-bottom:5%">
           </div>
         </div>
 
@@ -267,20 +285,18 @@
           <div class="col-lg-8">
             <div class="m-b-40">
               <span class="lead">
-                <h2>#4 Morse Code Encoder & Decoder</h2>
+                <h2><font color="blue">#4 Morse Code Encoder & Decoder</font></h2>
                 <p>Morse code is a character encoding scheme used in telecommunication that
                   encodes text characters as standardized sequences of two different signal
                   durations called dots and dashes or dits and dahs. Morse code is named for
                   Samuel F. B. Morse, an inventor of the telegraph.
                   <br><br>
-                  <button class="item-link" onclick="buttonClick(4)">READ MORE<i class="icon-chevron-right"></i></button>
+                  <button class="btn btn-light" onclick="buttonClick(4)">READ MORE<i class="icon-chevron-right"></i></button>
                   <br>
                   <div id = "data4"><h4 id = "title4" data-animate = "fadeIn">Problem Statement</h4>
                   <p id = "problem4" data-animate = "fadeIn">
                     1. Design a Morse code encoder and decoder. <br>
-                    a. You may use any signal for encoding (eg: visible light or an audio
-                    signal) so long as you can measure it and reproduce it. <br>
-
+                    &emsp;a. You may use any signal for encoding (eg: visible light or an audio signal) so long as you can measure it and reproduce it. <br>
                     2. Prepare a brief report on the design details. <br>
                 </p></div>
               </div>
@@ -288,7 +304,7 @@
             </div>
 
           <div class="col-lg-4">
-            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+            <img alt="" class="img-fluid" src="images/MINOR PROJECTS/Winter Drive/Morse.jfif" style="margin-bottom:5%">
           </div>
         </div>
 
@@ -297,7 +313,7 @@
           <div class="col-lg-8"  align="justify">
             <div class="m-b-40">
               <span class="lead">
-                <h2>#5 People Counter</h2>
+                <h2><font color="blue">#5 People Counter</font></h2>
                 <p>A people counter is an electronic device that is used to measure the number of
                   people traversing a certain passage or entrance. Examples include simple manual
                   clickers, infrared beams, thermal imaging systems, WiFi trackers and video
@@ -305,15 +321,15 @@
                   by retail establishments to judge the effectiveness of marketing campaigns,
                   building design and layout, and the popularity of particular brands.
                   <br><br>
-                  <button class="item-link" onclick="buttonClick(5)">READ MORE<i class="icon-chevron-right"></i></button>
+                  <button class="btn btn-light" onclick="buttonClick(5)">READ MORE<i class="icon-chevron-right"></i></button>
                   <br>
                   <div id = "data5"><h4 id = "title5" data-animate = "fadeIn">Problem Statement</h4>
                   <p id = "problem5" data-animate = "fadeIn">
                     1. Design a people counter. <br>
-                    a. The counters should be installed in at least two locations so try to
+                    &emsp;a. The counters should be installed in at least two locations so try to
                     create a scalable design and a simple but effective method of
                     counting people. <br>
-                    b. Have a LED setup in each location that turns off when the people
+                    &emsp;b. Have a LED setup in each location that turns off when the people
                     counter records a 0 and turns on if otherwise. <br>
                     2. Prepare a brief report on the design details. <br>
                     3. (Advanced) Create a simple app that indicates the number of people at each
@@ -326,7 +342,7 @@
             </div>
 
           <div class="col-lg-4">
-            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+            <img alt="" class="img-fluid" src="images/MINOR PROJECTS/Winter Drive/Counter.jfif" style="margin-bottom:5%">
           </div>
         </div>
 
@@ -335,7 +351,7 @@
           <div class="col-lg-8"  align="justify">
             <div class="m-b-40">
               <span class="lead">
-                <h2>#6 Software PID Controller</h2>
+                <h2><font color="blue">#6 Software PID Controller</font></h2>
                 <p>A proportional–integral–derivative controller (PID controller or three-term
                   controller) is a control loop mechanism employing feedback that is widely used in
                   industrial control systems and a variety of other applications requiring
@@ -344,16 +360,16 @@
                   process variable (PV) and applies a correction based on proportional, integral, and
                   derivative terms (denoted P, I, and D respectively), hence the name
                   <br><br>
-                  <button class="item-link" onclick="buttonClick(6)">READ MORE<i class="icon-chevron-right"></i></button>
+                  <button class="btn btn-light" onclick="buttonClick(6)">READ MORE<i class="icon-chevron-right"></i></button>
                   <br>
                   <div id = "data6"><h4 id = "title6" data-animate = "fadeIn">Problem Statement</h4>
                   <p id = "problem6" data-animate = "fadeIn">
                     1. Design a software PID controller for a DC motor to ensure a steady speed
                     (fixed rpm). You can omit the differential or integral term as you see fit. <br>
                     2. Implement the design. <br>
-                    a. You may choose the value of rpm (setpoint) <br>
-                    b. Determine a way to measure the process variable. <br>
-                    c. The process of selecting the constants for the proportional, integral,
+                    &emsp;a. You may choose the value of rpm (setpoint) <br>
+                    &emsp;b. Determine a way to measure the process variable. <br>
+                    &emsp;c. The process of selecting the constants for the proportional, integral,
                     and differential terms is trial-and-error. <br>
 
                     3. Prepare a brief report on the design and implementation details. <br>
@@ -364,7 +380,7 @@
             </div>
 
           <div class="col-lg-4">
-            <img alt="" class="img-fluid" src="images/SIG PAGES/ROBOTORQUE/Robot.png" style="margin-bottom:5%">
+            <img alt="" class="img-fluid" src="images/MINOR PROJECTS/Winter Drive/PID.png" style="margin-bottom:5%">
           </div>
         </div>
 
