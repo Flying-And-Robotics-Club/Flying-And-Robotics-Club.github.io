@@ -148,7 +148,7 @@ $widget_instagram.each(function(){var elem=$(this),instagramLimit=elem.attr('dat
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#header').innerHTML = navbar;
   });
-  
+
   var navbar = '\
   <div class="header-inner">\
     <div class="container">\
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul class="dropdown-menu">\
                   <li><a href="major-project.html">Major Project</a>\
                   </li>\
-                  <li>  <a href="MinorProjects.html">Ongoing</a>\
+                  <li>  <a href="MinorProjects.html">Minor Projects</a>\
                   </li>\
                 </ul>\
               </li>\
@@ -211,4 +211,3 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>\
     </div>\
   </div>';
-  
