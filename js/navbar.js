@@ -51,6 +51,7 @@ var navbar = '\
                     <a href="#">Past Events</a>\
                     <ul class="dropdown-menu">\
                       <li><a href="Wright-flight.html">Wright Flight</a></li>\
+                      <li><a href="DevSummer.html">DevSummer</a><li>\
                     </ul>\
                   </li>\
                 </ul>\
