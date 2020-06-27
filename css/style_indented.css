@@ -3948,14 +3948,6 @@ body.side-panel-static #wrapper .container {
 	box-shadow: 0 14px 20px rgba(0, 0, 0, .1)
 }
 
-.grid-item>a>img,
-.img-fluid,
-.post-image>a>img,
-.team-image>img {
-    border-radius: 10px !important ;
-    box-shadow: gray 3px 3px 5px !important ;
-}
-
 .page-menu nav>ul>li .dropdown-menu>li {
 	width: 100%
 }
