@@ -34,10 +34,47 @@
   <title>FARC | NITK</title>
   <link href="css/plugins.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="plugins/pageloader/pageloader.css">
 </head>
 
-<body data-icon="5">
+<style>
+  #loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  #loader-image {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    animation: gradient 2s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      opacity: 0%;
+    }
+
+    75% {
+      opacity: 20%;
+    }
+
+    100% {
+      opacity: 0%;
+    }
+  }
+</style>
+
+<div id="loader">
+  <img src="FARC.png" id="loader-image" width="8%">
+</div>
+
+<body>
   <div class="body-inner">
     <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
       <script>
@@ -250,7 +287,7 @@
         }, 1000);
       }
       setTimeout(function() {
-        $("#datadiv").slideToggle(300, "swing", function() {
+        $("#datadiv").slideToggle(200, "swing", function() {
           /*done*/ });
       }, 700);
 
@@ -507,8 +544,20 @@
   <script src="js/jquery.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/functions.js"></script>
-  <script src="plugins/pageloader/pageloader.js"></script>
-  <script src="plugins/pageloader/pageloader.init.js"></script>
+
+  <script>
+    $(document).on("load", function() {
+      console.log ("loading");
+      $("#loader").show();
+    });
+    $(document).ready(function() {
+      console.log ("ready"); $("#loader").show();
+      setTimeout(function() {
+        console.log ("faded out");
+        $("#loader").fadeOut("slow");
+      }, 1000);
+    });
+  </script>
 </body>
 
 </html>
