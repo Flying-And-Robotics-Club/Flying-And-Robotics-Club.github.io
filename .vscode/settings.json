@@ -1,0 +1,7 @@
+{
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.smoothScrolling": true
+}
