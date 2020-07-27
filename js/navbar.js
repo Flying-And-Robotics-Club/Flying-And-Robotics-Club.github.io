@@ -23,18 +23,18 @@ var navbar = '\
                 <a>Special Interest Groups</a>\
                 <ul class="dropdown-menu">\
                   <li><a href="robocode.html">Robocode</a></li>\
-                  <li><a href="RoboTorque.html">Robotorque</a></li>\
-                  <li><a href="RoboTronix.html">Robotronix</a></li>\
-                  <li><a href="Aerowing.html">Aerowing</a></li>\
-                  <li><a href="Digimedia.html">Digimedia</a></li>\
+                  <li><a href="robotorque.html">Robotorque</a></li>\
+                  <li><a href="robotronix.html">Robotronix</a></li>\
+                  <li><a href="aerowing.html">Aerowing</a></li>\
+                  <li><a href="digimedia.html">Digimedia</a></li>\
                 </ul>\
               </li>\
               <li class="dropdown">\
                 <a href="#">Projects</a>\
                 <ul class="dropdown-menu">\
-                  <li><a href="major-project.html">Major Project</a>\
+                  <li><a href="major_project.html">Major Project</a>\
                   </li>\
-                  <li>  <a href="MinorProjects.html">Minor Projects</a>\
+                  <li>  <a href="minor_projects.html">Minor Projects</a>\
                   </li>\
                 </ul>\
               </li>\
@@ -56,7 +56,7 @@ var navbar = '\
                   </li>\
                 </ul>\
               </li>\
-              <li><a href="Achievements.html">Achievements</a></li>\
+              <li><a href="achievements.html">Achievements</a></li>\
               <li><a href="gallery.html">Gallery</a></li>\
               <li><a href="alumni.html">Our Alumni</a></li>\
               <li><a href="about-us.html">About Us</a></li>\
