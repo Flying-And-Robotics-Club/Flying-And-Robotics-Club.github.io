@@ -59,7 +59,7 @@ var navbar = '\
               <li><a href="achievements.html">Achievements</a></li>\
               <li><a href="gallery.html">Gallery</a></li>\
               <li><a href="alumni.html">Our Alumni</a></li>\
-              <li><a href="about-us.html">About Us</a></li>\
+              <li><a href="about_us.html">About Us</a></li>\
           </nav>\
         </div>\
       </div>\
