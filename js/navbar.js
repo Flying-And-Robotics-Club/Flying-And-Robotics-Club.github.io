@@ -44,14 +44,14 @@ var navbar = '\
                   <li class="dropdown-submenu">\
                     <a href="#">Active Events</a>\
                     <ul class="dropdown-menu">\
-                      <li><a href="Visionnaire.html">Vissionaire</a></li>\
+                      <li><a href="visionnaire.html">Vissionaire</a></li>\
                     </ul>\
                   </li>\
                   <li class="dropdown-submenu">\
                     <a href="#">Past Events</a>\
                     <ul class="dropdown-menu">\
-                      <li><a href="Wright-flight.html">Wright Flight</a></li>\
-                      <li><a href="DevSummer.html">DevSummer</a><li>\
+                      <li><a href="wright_flight.html">Wright Flight</a></li>\
+                      <li><a href="devsummer.html">DevSummer</a><li>\
                     </ul>\
                   </li>\
                 </ul>\
