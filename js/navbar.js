@@ -44,7 +44,7 @@ var navbar = '\
                   <li class="dropdown-submenu">\
                     <a href="#">Active Events</a>\
                     <ul class="dropdown-menu">\
-                      <li><a href="visionnaire.html">Vissionaire</a></li>\
+                      <li><a href="visionnaire.html">Visionnaire</a></li>\
                     </ul>\
                   </li>\
                   <li class="dropdown-submenu">\
