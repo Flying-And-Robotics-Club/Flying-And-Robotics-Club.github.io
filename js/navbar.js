@@ -50,8 +50,9 @@ var navbar = '\
                   <li class="dropdown-submenu">\
                     <a href="#">Past Events</a>\
                     <ul class="dropdown-menu">\
-                      <li><a href="devsummer.html">DevSummer</a><li>\
                       <li><a href="wright_flight.html">Wright Flight</a></li>\
+                      <li><a href="devsummer.html">DevSummer</a><li>\
+                      <li><a href="kep_solidworks.html">SolidWorks KEP</a><li>\
                     </ul>\
                   </li>\
                 </ul>\
