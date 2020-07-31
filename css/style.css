@@ -3948,12 +3948,13 @@ body.side-panel-static #wrapper .container {
 	box-shadow: 0 14px 20px rgba(0, 0, 0, .1)
 }
 
-.grid-item>a>img,
+.grid-item > a > img,
 .img-fluid,
-.post-image>a>img,
-.team-image>img {
-    border-radius: 10px !important ;
-    box-shadow: gray 3px 3px 5px !important ;
+.post-image > a > img,
+.team-image > img,
+#content_image > img {
+	border-radius: 10px !important;
+	box-shadow: gray 3px 3px 5px !important;
 }
 
 .page-menu nav>ul>li .dropdown-menu>li {
@@ -9063,7 +9064,8 @@ h6.font-parisienne {
 }
 
 #footer .footer-content {
-	padding: 60px 0 40px
+	padding: 60px 0 40px;
+	background-color: #F4F4FF;
 }
 
 #footer .widget .widget-title,
@@ -16303,6 +16305,8 @@ span.highlight {
 
 .team-members .team-member .team-image {
 	margin-bottom: 20px
+	-webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, .03);
+	box-shadow: 0 3px 16px rgba(0, 0, 0, .03)
 }
 
 .team-members .team-member .team-image>img {
@@ -19947,22 +19951,38 @@ body[data-bg-image] {
 	opacity: 1
 }
 
-.wizard>.steps .current-info,
-.tabcontrol>.steps .current-info,
-.wizard>.content>.title,
-.tabcontrol>.content>.title {
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info,
+.wizard > .content > .title,
+.tabcontrol > .content > .title {
 	position: absolute;
 	left: -999em
 }
 
-@media(max-width:576px) {
-	.wizard>.steps ul {
+#img-member {
+	border-radius: 50%;
+	width: 110%;
+	box-shadow: gray 3px 3px 5px;
+}
+
+@media (max-width: 991px) {
+	#img-member {
+		border-radius: 50%;
+		width: 80%;
+		margin-left: 10%;
+		box-shadow: gray 3px 3px 5px;
+	}
+}
+
+@media (max-width: 576px) {
+	.wizard > .steps ul {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column
 	}
-	.wizard>.steps ul li {
+
+	.wizard > .steps ul li {
 		-webkit-box-flex: 1;
 		-ms-flex: 1;
 		flex: 1;
@@ -19974,9 +19994,13 @@ body[data-bg-image] {
 	padding: 1rem
 }
 
-@media(min-width:992px) {
-	a>span.logo-default::after,
-	a>span.logo-dark::after {
+.col-lg-4 > .team-member:hover, .post-item-wrap:hover {
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .2)
+}
+
+@media (min-width: 992px) {
+	a > span.logo-default::after,
+	a > span.logo-dark::after {
 		position: absolute;
 		background: #2250fc;
 		width: 13px;

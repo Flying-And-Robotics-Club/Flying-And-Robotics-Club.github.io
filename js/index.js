@@ -30,9 +30,10 @@ minorProjects.push(roboticArm);
 function expand_minor_projects(index) {
   if (window.screen.width * window.devicePixelRatio > 1200) {
   document.querySelector('#datadiv').style.display = "none";
-  setTimeout(function(){
-    $("#datadiv").slideToggle(200, "swing", function(){/*done*/});
-  }, 700);
+      setTimeout(function () {
+          $("#datadiv").slideToggle(200, "swing", function () {/*done*/
+          });
+      }, 0);
   //document.querySelector('#datadiv').style.display = "block";
   var project = minorProjects[index];
   document.querySelector('#content_title').innerText = project["title"];
@@ -44,8 +45,10 @@ function expand_minor_projects(index) {
   document.querySelector('#content_description').innerText = "\n" + project["description"];
   document.querySelector('#content_deadline').innerText = "Expected deadline: " + project["deadline"];
   document.querySelector('#content_teams_involved').innerText = "Teams involved: " + project["teams_involved"];
-  document.querySelector('#collapse').style.display = "block";
-  setTimeout(function(){smoothScroll(document.querySelector("#content2"));},1000);
+      document.querySelector('#collapse').style.display = "block";
+      setTimeout(function () {
+          smoothScroll(document.querySelector("#content2"));
+      }, 500);
 }
 }
 
@@ -66,7 +69,9 @@ window.smoothScroll = function(target) {
     scroll = function(c, a, b, i) {
         i++; if (i > 30) return;
         c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        setTimeout(function () {
+            scroll(c, a, b, i);
+        }, 5);
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);

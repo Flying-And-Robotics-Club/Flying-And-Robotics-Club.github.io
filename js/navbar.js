@@ -22,11 +22,11 @@ var navbar = '\
               <li class="dropdown">\
                 <a>Special Interest Groups</a>\
                 <ul class="dropdown-menu">\
-                  <li><a href="robocode.html">Robocode</a></li>\
-                  <li><a href="robotorque.html">Robotorque</a></li>\
-                  <li><a href="robotronix.html">Robotronix</a></li>\
-                  <li><a href="aerowing.html">Aerowing</a></li>\
-                  <li><a href="digimedia.html">Digimedia</a></li>\
+                  <li><a href="robocode.html">RoboCode</a></li>\
+                  <li><a href="robotorque.html">RoboTorque</a></li>\
+                  <li><a href="robotronix.html">RoboTronix</a></li>\
+                  <li><a href="aerowing.html">AeroWing</a></li>\
+                  <li><a href="digimedia.html">DigiMedia</a></li>\
                 </ul>\
               </li>\
               <li class="dropdown">\
@@ -50,8 +50,8 @@ var navbar = '\
                   <li class="dropdown-submenu">\
                     <a href="#">Past Events</a>\
                     <ul class="dropdown-menu">\
-                      <li><a href="wright_flight.html">Wright Flight</a></li>\
                       <li><a href="devsummer.html">DevSummer</a><li>\
+                      <li><a href="wright_flight.html">Wright Flight</a></li>\
                     </ul>\
                   </li>\
                 </ul>\
